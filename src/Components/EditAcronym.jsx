@@ -57,12 +57,13 @@ export default function EditAcronym() {
 
             <div className="form-group">
                 <label htmlFor="fullForm">Result</label>
-                <input
-                    type="text"
+                <textarea
                     id="fullForm"
                     value={fullForm}
+                    className='form-control'
                     onChange={(e) => setFullForm(e.target.value)}
-                    placeholder={"Press Calculate to get the result"}
+                    placeholder={"Result"}
+                    rows="4"
                 />
             </div>
             <button onClick={handleUpdate} >Update</button>

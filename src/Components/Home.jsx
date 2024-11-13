@@ -57,13 +57,13 @@ export default function Home() {
 
             <div className="form-group">
                 <label htmlFor="fullForm">Result</label>
-                <input
-                    type="text"
+                <textarea
                     id="fullForm"
-                    disabled
                     value={fullForm}
+                    className='form-control'
                     onChange={(e) => setFullForm(e.target.value)}
                     placeholder={"Press Calculate to get the result"}
+                    rows="4"
                 />
             </div>
             <button onClick={handleCalculate}>Calculate</button>

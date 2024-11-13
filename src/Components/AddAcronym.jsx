@@ -43,14 +43,16 @@ export default function AddAcronym() {
 
             <div className="form-group">
                 <label htmlFor="fullForm">Result of query</label>
-                <input
-                    type="text"
+                <textarea
                     id="fullForm"
                     value={fullForm}
+                    className='form-control'
                     onChange={(e) => setFullForm(e.target.value)}
                     placeholder={"Press Calculate to get the result"}
+                    rows="4"
                 />
             </div>
+
             <button onClick={handleadd}><i className='fas fa-plus'></i> Add</button>
         </div>
     );
